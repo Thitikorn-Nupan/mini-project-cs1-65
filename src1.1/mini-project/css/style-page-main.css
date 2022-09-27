@@ -1,0 +1,540 @@
+@font-face {
+    font-family: Mitr;
+    src: url(../font/Mitr-ExtraLight.ttf);
+}
+* { 
+/* clear values default */
+    margin: 0;
+    padding: 0;
+    font-family: Mitr;
+    
+}
+/* ***************MENU******************* */
+.control-main-menu {
+    max-width: 1490px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #868686;  /* border-ล่าง(bottom) ดันจากล่างขึ้นบน 1 px */
+
+}
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.logo { /* แบ่ง logo , text ด้วย display : grid */
+    display: grid ;
+    grid-template-columns: 60px 2fr;
+    padding: 30px;
+
+}
+.logo .img {
+
+    width: 45px;
+    height: 45px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.logo p {
+    font-size: 19px;
+    margin-top: 10px;
+    /* padding: 0px 10px;  บนล่าง ซ้ายขวา*/
+    font-weight: 900;
+
+}
+
+.ul-grid  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    padding: 30px;
+}
+.ul-grid .clicks {
+    list-style: none;
+    margin-top: 13px;
+    
+}
+.ul-grid .clicks a {
+    text-decoration: none;  /* ลบเส้นใต้ tag <a>*/
+    color: black;
+    font-weight: 1000;
+    transition: all 0.3s ease-in-out;
+}
+.ul-grid .clicks a:hover {
+    color: rgb(36, 189, 138);
+    font-size: 30px;
+
+}
+/* dropdown */
+
+
+/*  */
+.ul-grid .clicks-d a {
+    text-decoration: none;  /* ลบเส้นใต้ tag <a>*/
+    color: black;
+    font-weight: 1000;
+    transition: all 0.3s ease-in-out;
+}
+.ul-grid .clicks-d a:hover {
+    color: rgb(36, 189, 138);
+    font-size: 30px;
+
+}
+/* ***************MENU******************* */
+
+
+/* ***************HEAD******************* */
+.contro-main-head {
+    max-width:1460px;
+    width: 100%;
+    margin: 0 auto;
+}
+.contro-main-head .section-advice-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4rem;
+    padding: 30px;
+}
+.items {
+
+    /* background-color: #f0ecec; */
+    padding: 10px 10px;
+}
+.i-mage-bmi {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-image: url("../image/bmi.png");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 467px;
+}
+.i-mage-bmr {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-image: url("../image/bmr.png");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 467px;
+}
+.section-advice-grid .info h3 {
+    padding: 15px 0px
+}
+/* ***************HEAD******************* */
+
+
+
+/* ***************FORMS BMI******************* */
+.contro-main-formbmi {
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+.main-input {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-input h3 {
+    padding: 40px 0px;
+    text-transform: uppercase;
+}
+.section-input-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+input {
+    border: 0px;
+    border-bottom: 2px solid #868686;
+}
+.main-action {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0px;
+}
+.main-action .actions{
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 30px 30px 30px 30px;
+    border: 0px;
+    background-color: #ffff;
+    transition: .3s ease-in-out;
+}
+.main-action .actions:hover {
+    background-color: rgb(36, 189, 138);
+    color: #fff;
+}
+.actions-to-result {
+
+    padding: 5px 30px;
+    border-radius: 30px 30px 30px 30px;
+    border: 0px;
+    background-color: #ffff;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.actions-to-result:hover{
+    background-color: rgb(36, 189, 138);
+    font-size: 18px;
+
+}
+.main-action a {
+    color: white;
+    letter-spacing: 5px;
+    text-decoration: none; 
+}
+/* ***************FORMS BMI******************* */
+
+
+
+/* ***************FORMS BMR******************* */
+.contro-main-formbmi {
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+.section-input-grid-bmr {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.main-input .group-gender{
+    margin-top: 35px;
+}
+.main-input .group-gender .space-gender {
+    width: 30px;
+    height: 9px;
+}
+.main-action .actions-two{
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 30px 30px 30px 30px;
+    border: 0px;
+    background-color: #ffff;
+    transition: .3s ease-in-out;
+}
+.main-action .actions-two:hover {
+    background-color: rgb(36, 189, 138);
+    color: #fff;
+}
+/* ***************FORMS BMR******************* */
+
+
+
+
+
+
+/* ***************COOKING*******************  */
+.contro-main-cook {
+    max-width:1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0px;
+
+
+}
+.contro-main-cook .span-text {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #868686;
+    width: 350px;
+    padding: 10px 0px;
+}
+.contro-main-cook .section-cooking-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem;  /* grid-gap use กำหนดช่องว่างของ grid */
+    margin-top: 50px;
+}
+.item-cooks {
+    padding: 10px 10px;
+    text-align: center;
+}
+.item-cooks h3 {
+    padding: 10px 0px;
+}
+.item-cooks .i-mage-c-one {
+    border-top-right-radius: 50px;
+    background-image: url("../image/foodone.jpg");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+}
+.i-mage-c-one:hover{
+    box-shadow: 13px -8px rgb(36, 189, 138);
+
+}
+
+.i-mage-c-two {
+    border-top-right-radius: 50px;
+    background-image: url("../image/foodtwo.jpg");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+}
+.i-mage-c-two:hover{
+    box-shadow: 13px -8px rgb(36, 189, 138);
+}
+
+.i-mage-c-three {
+    border-top-right-radius: 50px;
+    background-image: url("../image/foodthree.jpg");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+}
+.i-mage-c-three:hover{
+    box-shadow: 13px -8px rgb(36, 189, 138);
+
+}
+
+.i-mage-c-four {
+    border-top-right-radius: 50px;
+    background-image: url("../image/foodfour.jpg");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+}
+.i-mage-c-four:hover{
+    box-shadow: 13px -8px rgb(36, 189, 138);
+
+}
+
+.i-mage-c-five {
+    border-top-right-radius: 50px;
+    background-image: url("../image/foodfive.jpg");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+}
+.i-mage-c-five:hover{
+    box-shadow: 13px -8px rgb(36, 189, 138);
+
+}
+
+.i-mage-c-six {
+    border-top-right-radius: 50px;
+    background-image: url("../image/foodsix.jpg");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+}
+.i-mage-c-six:hover{
+    box-shadow: 13px -8px rgb(36, 189, 138);
+
+
+}
+
+.i-mage-c-seven {
+    border-top-right-radius: 50px;
+    background-image: url("../image/foodseven.jpg");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+}
+.i-mage-c-seven:hover{
+    box-shadow: 13px -8px rgb(36, 189, 138);
+
+}
+
+.i-mage-c-eight {
+    border-top-right-radius: 50px;
+    background-image: url("../image/foodeight.jpg");
+    background-repeat: no-repeat;  /* ไม่ทำภาพซ้ำ */
+    background-position: center;
+    height: 280px;
+    transition: all 0.3s ease-in-out;
+}
+.i-mage-c-eight:hover{
+    box-shadow: 13px -8px rgb(36, 189, 138);
+}
+/* ***************COOKING*******************  */
+
+
+
+
+
+/* ***************FORMS FUNCTIONS******************* */
+
+.contro-main-function {
+    padding: 30px 0px;
+    /* min-height: 100vh;  min-height: ดัน section ลง */
+    min-height: calc(100vh - 655px); 
+    /* กำหนดขนากได้โดยใช้ *** calc (100vh [[ความสูงเต็มหน้า page] - 655px [size จากด้านล่าง section ขึ้นมาและยังคงเต็มหน้า page] );*/
+}
+.section-main-real {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.main-input-function {
+    max-width: 1050px;
+    margin: 0px auto;
+    text-align: center;
+}
+.main-input-function h3 {
+    padding: 40px 0px;
+    text-transform: uppercase;
+}
+
+.main-input-function .section-chooses-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-weight: bold;
+}
+.message-chooses {
+    display: block; /* ถ้าใช้ margin , padding ไม่ได้ ลองกำหนด display เป็น block*/
+    padding: 30px 0px;
+}
+.main-input-function .section-chooses-grid .chooses {
+    padding: 10px 0px;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+}
+.space-cricle {
+    margin: 0px 10px;
+}
+
+/* ***************FORMS FUNCTIONS******************* */
+
+
+
+
+
+/* ***************FOOTER*******************  */
+footer {
+    background-color: rgb(64, 211, 162);
+    color: #fff;
+    font-weight: 900;
+}
+.contro-main-footer {
+    padding-bottom: 30px;
+    max-width: 960px;
+    width: 100%;
+    margin:  0 auto;
+}
+.logo-footer { /* แบ่ง logo , text ด้วย display : grid */
+    display: grid ;
+    grid-template-columns: 60px 2fr;
+    padding: 30px 0px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo-footer .img {
+    width: 45px;
+    height: 45px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.logo-footer p {
+    font-size: 19px;
+    margin-top: 10px;
+    /* padding: 0px 10px;  บนล่าง ซ้ายขวา*/
+}
+.email {
+    text-align: center;
+    font-size: 18px;
+    padding: 0px 10px;
+    letter-spacing: 5px;
+}
+
+/* ***************FOOTER*******************  */
+
+/* size tablet */
+@media only screen and   (max-width:830px) { 
+    
+    
+    .contro-main-cook .section-cooking-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 15px 65px;
+    }
+    .contro-main-head .section-advice-grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+        padding: 0px 30px;
+    }
+    .ul-grid .clicks a:hover {
+        color: rgb(36, 189, 138);
+        font-size: 18px;
+    
+    }
+    .main-input-function .section-chooses-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* size mobile */
+@media only screen and (max-width:415px) {
+    .contro-main-formbmr .section-input-grid-bmr {
+        
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .section-input-grid-bmr .number-input {
+        padding: 13px 10px;
+    }
+    .section-input-grid-bmr .space-input {
+        width: 200px;
+    }
+    .section-input-grid-bmr .text-age {
+        margin-right: 15px;
+    }
+    .contro-main-cook .section-cooking-grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 15px 65px;
+    }
+    .contro-main-formbmr {
+        padding: 0px 15px;
+    }
+    .logo {    
+        margin-top: 14px;
+        padding: 41px 23px; 
+    }
+    .logo p {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+    .ul-grid {
+        grid-template-columns: repeat(2,1fr);
+        padding: 35px 10px;
+        font-size: 8px;
+    }
+    .ul-grid .clicks a:hover {
+        color: rgb(36, 189, 138);
+        font-size: 15px;
+    
+    }
+    .ul-grid .clicks {
+        padding: 0px 2px;
+    }
+
+    .section-main-real {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 15px 65px;
+        grid-gap: 30px
+    }
+    .main-input-function .section-chooses-grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px;
+    }
+    .logo-footer p {
+        margin-left: 12px;
+    }
+
+}
+
+

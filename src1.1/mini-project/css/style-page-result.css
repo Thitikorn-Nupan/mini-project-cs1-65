@@ -1,0 +1,258 @@
+@font-face {
+    font-family: Mitr;
+    src: url(../font/Mitr-ExtraLight.ttf);
+}
+* { 
+/* clear values default */
+    margin: 0;
+    padding: 0;
+    font-family: Mitr;
+
+}
+
+/* ***************MENU******************* */
+.control-main-menu {
+    max-width: 1490px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #868686;  /* border-ล่าง(bottom) ดันจากล่างขึ้นบน 1 px */
+    
+}
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.logo { /* แบ่ง logo , text ด้วย display : grid */
+    display: grid ;
+    grid-template-columns: 60px 2fr;
+    padding: 30px;
+
+}
+.logo .img {
+
+    width: 45px;
+    height: 45px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.logo p {
+    font-size: 19px;
+    margin-top: 10px;
+    /* padding: 0px 10px;  บนล่าง ซ้ายขวา*/
+    font-weight: 900;
+}
+
+.ul-grid  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    padding: 30px;
+}
+.ul-grid .clicks {
+    list-style: none;
+    margin-top: 13px;
+}
+.ul-grid .clicks a {
+    text-decoration: none;  /* ลบเส้นใต้ tag <a>*/
+    color: black;
+    font-weight: 1000;
+    transition: all 0.3s ease-in-out;
+}
+.ul-grid .clicks a:hover {
+    color: rgb(36, 189, 138);
+    font-size: 30px;
+}
+/* ***************MENU******************* */
+
+
+
+/* ***************OUTPUT******************* */
+.contro-main-displays {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 800px;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+.displays-result {
+    max-width: 250px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 30px 30px 30px 30px;
+    /* border: 5px solid rgb(36, 189, 138); */
+    background-color: #fff;
+    transition: all 0.8s ease-in-out;
+}
+.displays-result:hover {
+    background-color: rgb(36, 189, 138);
+}
+.main-box {
+    padding: 30px 30px;
+}
+.main-box h3 {
+    font-size: 35px;
+    text-align: center;
+}
+.main-box .output {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+/* ***************OUTPUT******************* */
+
+
+
+
+/* ***************BMI TABLE******************* */
+.contro-main-table {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0px;
+
+}
+.bmi-table {
+    margin:  0 auto;
+    border-collapse: collapse; /*ลบเส้นขอบตาราง*/
+    text-align: center;
+    max-width:640px;
+    width: 100%;
+    margin-top: 40px;
+
+}
+.bmi-table .top-table {
+    background-color: rgb(36, 189, 138);
+
+}
+.bmi-table .top-table .th {
+    color: #fff;
+    
+}
+.bmi-table td , th {
+    border-bottom: 1px solid #dddddd;
+    padding: 8px;
+      
+}
+/* ***************BMI TABLE******************* */
+
+
+
+
+
+.contro-main-functions {
+    padding: 100px 0;
+    min-height: calc(100vh - 695px); /* n px ยิ่งมาก section ด้านล่างจะยิ่งเข้าใกล้*/
+}
+.contro-main-functions .displays-function {
+    max-width: 550px;
+    width: 100%;
+    height: 265px;
+    margin: 0 auto;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #fff;
+    transition: all 0.8s ease-in-out;
+    overflow: auto; /* กำหนดรูปแบบที่เรา set เป็นคงที่ ขนาดที่เกินจะกลายเป็น scroll */
+}
+.contro-main-functions .displays-function:hover {
+    background-color: rgb(36, 189, 138);
+}
+
+
+
+
+
+/* ***************FOOTER******************* */
+footer {
+
+    background-color: rgb(64, 211, 162);
+    color: #fff;
+    font-weight: 900;
+    margin-top: 7rem;
+
+}
+.contro-main-footer {
+    padding-bottom: 30px;
+    max-width: 960px;
+    width: 100%;
+    margin:  0 auto;
+}
+.logo-footer { /* แบ่ง logo , text ด้วย display : grid */
+    display: grid ;
+    grid-template-columns: 60px 2fr;
+    padding: 30px 0px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo-footer .img {
+    width: 45px;
+    height: 45px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.logo-footer p {
+    font-size: 19px;
+    margin-top: 10px;
+    /* padding: 0px 10px;  บนล่าง ซ้ายขวา*/
+}
+.email {
+    text-align: center;
+    font-size: 18px;
+    padding: 0px 10px;
+    letter-spacing: 5px;
+    
+}
+/* ***************FOOTER******************* */
+
+
+/* size tablet */
+@media only screen and   (max-width:830px) {
+    
+    .ul-grid .clicks a:hover {
+        color: rgb(36, 189, 138);
+        font-size: 18px;
+    
+    }
+    .contro-main-displays {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 90px;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    .contro-main-displays {
+       width: auto;
+    }
+    .logo {    
+        margin-top: 14px;
+        padding: 41px 23px; 
+    }
+    .logo p {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+    .ul-grid {
+        grid-template-columns: repeat(2,1fr);
+        padding: 35px 10px;
+        font-size: 8px;
+    }
+    .ul-grid .clicks a:hover {
+        color: rgb(36, 189, 138);
+        font-size: 15px;
+    
+    }
+    .contro-main-table {
+        max-width: 350px;
+        width: auto;
+    }
+    .bmi-table {
+        font-size: 11px;
+    }
+    .contro-main-functions {
+        padding: 100px 45px;
+    }
+    .logo-footer p {
+        margin-left: 12px;
+    }
+}
